@@ -51,7 +51,7 @@ Ok, I guess I will eat some spinach.
 Ok, I guess I will eat some cauliflower.
 Ok, I guess I will eat some broccoflower.*/
 
-//3 
+//3  This challenge hs to write a function that squares each number inside of an array using .map() method.
 const numbers = [2, 7, 9, 171, 52, 33, 14]
 const squareNums = arrayName =>{ // this takes an array and uses he .map() method to create a new array from the result of multiplying each number by itself.
   newArray = arrayName.map(x => x * x);
@@ -60,3 +60,17 @@ const squareNums = arrayName =>{ // this takes an array and uses he .map() metho
 
 console.log(squareNums(numbers)); 
 // logs [ 4, 49, 81, 29241, 2704, 1089, 196 ]
+
+// 4 This challenge has me write a function that returns a new array by iterating through another array and using .toUpperCase() method.
+const greetings = ['hello', 'hi', 'heya', 'oi', 'hey', 'yo'];
+const shoutGreetings = arrayName =>{
+  let newArray = []
+  for (let i = 0; i < arrayName.length; i++){
+    newArray.push(arrayName[i].toUpperCase() + "!")
+  }
+  return newArray
+}
+console.log(shoutGreetings(greetings));
+// outputs [ 'HELLO!', 'HI!', 'HEYA!', 'OI!', 'HEY!', 'YO!' ]
+
+//5

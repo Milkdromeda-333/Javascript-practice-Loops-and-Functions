@@ -18,4 +18,37 @@ console.log(convertToBaby(animals))
   'baby sloth',
   'baby human' ]*/
   
-  // 2
+  // 2 This challenge has me to write a program that iterates through an array and calls a function for each iteration. Also, to write a function that iterates through an array.
+const veggies = ['broccoli', 'spinach', 'cauliflower', 'broccoflower'];
+const politelyDecline = (veg) => {
+      console.log('No ' + veg + ' please.');
+}
+let declineEverything = arrayName =>{ // this iterates through each item in the array and calls the politelyDecline function
+     arrayName.forEach(politelyDecline)
+ 
+}
+const acceptEverything = arrayName =>{ // this iterates through each item in the array and applies the added changes and logs it.
+  for(let i = 0; i < arrayName.length; i++){
+    console.log(`Ok, I guess I will eat some ${arrayName[i]}.`)
+  };
+}
+
+const acceptEverythingAlso = arrayName =>{  // this iterates through each item in the array and applies the added changes and logs it.
+  arrayName.forEach(name => console.log(`Ok, I guess I will eat some ${name}.`))
+}
+
+declineEverything(veggies);
+/* outputs
+Output:
+No broccoli please. I will have pizza with extra cheese.
+No spinach please. I will have pizza with extra cheese.
+No cauliflower please. I will have pizza with extra cheese.
+No broccoflower please. I will have pizza with extra cheese.*/
+acceptEverythingAlso(veggies);
+/* Outputs
+Ok, I guess I will eat some broccoli.
+Ok, I guess I will eat some spinach.
+Ok, I guess I will eat some cauliflower.
+Ok, I guess I will eat some broccoflower.*/
+
+//3 

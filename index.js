@@ -52,3 +52,11 @@ Ok, I guess I will eat some cauliflower.
 Ok, I guess I will eat some broccoflower.*/
 
 //3 
+const numbers = [2, 7, 9, 171, 52, 33, 14]
+const squareNums = arrayName =>{ // this takes an array and uses he .map() method to create a new array from the result of multiplying each number by itself.
+  newArray = arrayName.map(x => x * x);
+  return newArray;
+}
+
+console.log(squareNums(numbers)); 
+// logs [ 4, 49, 81, 29241, 2704, 1089, 196 ]

@@ -73,4 +73,11 @@ const shoutGreetings = arrayName =>{
 console.log(shoutGreetings(greetings));
 // outputs [ 'HELLO!', 'HI!', 'HEYA!', 'OI!', 'HEY!', 'YO!' ]
 
-//5
+//5 This challenge has me write a function that takes an array of dates and use the .sort() method to sort them and then .reverse() method to reverse them and return the array in descending order
+const years = [1970, 1999, 1951, 1982, 1963, 2011, 2018, 1922];
+const sortYears = arrayName =>{
+  arrayName.sort();
+  let newArray = arrayName.reverse()
+  return newArray
+}
+console.log(sortYears(years)); // outputs [ 2018, 2011, 1999, 1982, 1970, 1963, 1951, 1922 ]
